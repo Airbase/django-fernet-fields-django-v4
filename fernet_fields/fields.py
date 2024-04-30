@@ -120,7 +120,10 @@ class EncryptedEmailField(EncryptedField, models.EmailField):
 
 
 class EncryptedIntegerField(EncryptedField, models.IntegerField):
-    pass
+    def get_db_prep_save(self, value, connection):
+        if value is not None:
+            retval = self.fernet.encrypt(force_bytes(value))
+            return connection.Database.Binary(retval)
 
 
 class EncryptedDateField(EncryptedField, models.DateField):
