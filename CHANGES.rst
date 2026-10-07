@@ -4,6 +4,10 @@ CHANGES
 master (unreleased)
 -------------------
 
+* Support latest ``cryptography`` (tested on 50.x); pin ``cryptography==50.0.2``
+* Verified against Django 6.0
+* Add known-answer tests pinning HKDF key derivation and Fernet token format
+
 0.6 (2019.05.10)
 ----------------
 
