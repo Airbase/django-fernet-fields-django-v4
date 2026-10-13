@@ -4,7 +4,7 @@ CHANGES
 master (unreleased)
 -------------------
 
-* Support latest ``cryptography`` (tested on 50.x); pin ``cryptography==50.0.2``
+* Support latest ``cryptography`` (tested on 50.x); require ``cryptography>=50.0.2,<51.0.0``
 * Verified against Django 6.0
 * Add known-answer tests pinning HKDF key derivation and Fernet token format
 
