@@ -23,7 +23,7 @@ setup(
     author_email='orcastech@orcasinc.com',
     url='https://github.com/orcasgit/django-fernet-fields/',
     packages=find_packages(),
-    install_requires=['Django>=1.11', 'cryptography>=0.9'],
+    install_requires=['Django>=1.11', 'cryptography==50.0.2'],
     classifiers=[
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
